@@ -25,3 +25,6 @@ for doc in lista_datos:
         json=doc
     )
     print(f"Insertando {doc['nombre']} | {response.status_code}")
+
+"Los dos programas leen el archivo datos.json y seleccionan algunos datos. La diferencia es cómo los envían a Apache CouchDB: "
+"en ejemplo04 los manda uno por uno, mientras que en ejemplo03 los envía todos juntos de una sola vez por eso este último es más rápido."
